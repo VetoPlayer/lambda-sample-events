@@ -1,0 +1,20 @@
+{
+  "Records": [
+    {
+      "eventID": "shardId-000000000000:{{.sequence}}",
+      "eventVersion": "1.0",
+      "kinesis": {
+        "approximateArrivalTimestamp": 1428537600,
+        "partitionKey": "{{.partition}}",
+        "data": "{{.Data}}",
+        "kinesisSchemaVersion": "1.0",
+        "sequenceNumber": "{{.sequence}}"
+      },
+      "invokeIdentityArn": "arn:aws:iam::EXAMPLE",
+      "eventName": "aws:kinesis:record",
+      "eventSourceARN": "arn:aws:kinesis:EXAMPLE",
+      "eventSource": "aws:kinesis",
+      "awsRegion": "{{.region}}"
+    }
+  ]
+}

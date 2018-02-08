@@ -1,0 +1,8 @@
+{
+  "tags": {
+    "region": {
+      "usage": "The AWS Region the event should come from",
+      "default": "us-east-1"
+    }
+  }
+}

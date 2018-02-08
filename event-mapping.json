@@ -1,0 +1,391 @@
+{
+  "events": {
+    "alexa": [
+      {
+        "filename": "AlexaEndSession",
+        "id": "end-session",
+        "description": "Alexa End Session",
+        "tags": []
+      },
+      {
+        "filename": "AlexaIntent-Answer",
+        "id": "answer",
+        "description": "Alexa Intent - Answer",
+        "tags": []
+      },
+      {
+        "filename": "AlexaIntent-GetNewFact",
+        "id": "get-new-fact",
+        "description": "Alexa Intent - Get New Fact",
+        "tags": []
+      },
+      {
+        "filename": "AlexaIntent-MyColorIs",
+        "id": "my-color-is",
+        "description": "Alexa Intent - My Color Is",
+        "tags": []
+      },
+      {
+        "filename": "AlexaIntent-Recipe",
+        "id": "recipe",
+        "description": "Alexa Intent - Recipe",
+        "tags": []
+      },
+      {
+        "filename": "AlexaSmartHome-Control",
+        "id": "control",
+        "description": "Alexa Smart Home - Control",
+        "tags": []
+      },
+      {
+        "filename": "AlexaSmartHome-Discovery",
+        "id": "discovery",
+        "description": "Alexa Smart Home - Discovery",
+        "tags": []
+      },
+      {
+        "filename": "AlexaSmartHome-TurnOff",
+        "id": "turn-off",
+        "description": "Alexa Smart Home - Turn Off",
+        "tags": []
+      },
+      {
+        "filename": "AlexaSmartHome-TurnOn",
+        "id": "turn-on",
+        "description": "Alexa Smart Home - Turn On",
+        "tags": []
+      },
+      {
+        "filename": "AlexaStartSession",
+        "id": "start-session",
+        "description": "Alexa Start Session",
+        "tags": []
+      }
+    ],
+    "apigateway": [
+      {
+        "filename": "ApiGatewayAuthorizer",
+        "id": "api-authorizer",
+        "description": "API Gateway Authorizer",
+        "tags": []
+      },
+      {
+        "filename": "ApiGatewayAwsProxy",
+        "id": "api-aws-proxy",
+        "description": "API Gateway AWS Proxy",
+        "tags": [
+          {
+            "name": "method",
+            "usage": "HTTP method",
+            "default": "POST"
+          },
+          {
+            "name": "body",
+            "usage": "HTTP body",
+            "default": "{ \"test\": \"body\"}"
+          },
+          {
+            "name": "resource",
+            "usage": "API Gateway resource name",
+            "default": "/{proxy+}"
+          },
+          {
+            "name": "path",
+            "usage": "HTTP path",
+            "default": "/examplepath"
+          }
+        ]
+      }
+    ],
+    "batch": [
+      {
+        "filename": "AwsBatchGetJobRequest",
+        "id": "batch-get-request",
+        "description": "AWS Batch Get Job Request",
+        "tags": []
+      },
+      {
+        "filename": "AwsBatchSubmitJobRequest",
+        "id": "batch-submit-request",
+        "description": "AWS Batch Submit Job Request",
+        "tags": []
+      }
+    ],
+    "config": [
+      {
+        "filename": "AwsConfigChangeTriggeredRule",
+        "id": "config-triggered-rule",
+        "description": "AWS Config Change Triggered Rule",
+        "tags": []
+      },
+      {
+        "filename": "AwsConfigChangeTriggeredRuleOversized",
+        "id": "config-triggered-rule-oversized",
+        "description": "AWS Config Change Triggered Rule Oversized",
+        "tags": []
+      },
+      {
+        "filename": "AwsConfigPeriodicRule",
+        "id": "periodic-rule",
+        "description": "AWS Config Periodic Rule",
+        "tags": []
+      }
+    ],
+    "cloudformation": [
+      {
+        "filename": "CloudFormationCreateRequest",
+        "id": "create",
+        "description": "CloudFormation Create Request",
+        "tags": []
+      }
+    ],
+    "cloudfront": [
+      {
+        "filename": "CloudFrontAbTest",
+        "id": "ab-test",
+        "description": "CloudFront AB Test",
+        "tags": []
+      },
+      {
+        "filename": "CloudFrontAccessRequestHeaderInResponseEvent",
+        "id": "access-request-header",
+        "description": "CloudFront Access Request Header In Response",
+        "tags": []
+      },
+      {
+        "filename": "CloudFrontHttpRedirect",
+        "id": "http-redirect",
+        "description": "CloudFront HTTP Redirect",
+        "tags": []
+      },
+      {
+        "filename": "CloudFrontModifyResponseHeader",
+        "id": "modify-response-header",
+        "description": "CloudFront Modify Response Header",
+        "tags": []
+      },
+      {
+        "filename": "CloudFrontResponseGeneration",
+        "id": "response-generation",
+        "description": "CloudFront Response Generation",
+        "tags": []
+      },
+      {
+        "filename": "CloudFrontSimpleRemoteCall",
+        "id": "simple-remote-call",
+        "description": "CloudFront Simple Remote Call",
+        "tags": []
+      }
+    ],
+    "logs": [
+      {
+        "filename": "CloudWatchLogs",
+        "id": "cloudwatch-logs",
+        "description": "CloudWatch Logs",
+        "tags": []
+      }
+    ],
+    "codecommit": [
+      {
+        "filename": "CodeCommit",
+        "id": "code-commit",
+        "description": "CodeCommit",
+        "tags": []
+      }
+    ],
+    "cognito": [
+      {
+        "filename": "CognitoSyncTrigger",
+        "id": "sync-trigger",
+        "description": "Cognito Sync Trigger",
+        "tags": []
+      }
+    ],
+    "dynamodb": [
+      {
+        "filename": "DynamoDbUpdate",
+        "id": "update",
+        "description": "DynamoDB Update",
+        "tags": [
+          {
+            "name": "region"
+          }
+        ]
+      }
+    ],
+    "kinesis": [
+      {
+        "filename": "Kinesis",
+        "id": "kinesis",
+        "description": "Kinesis",
+        "tags": [
+          {
+            "name": "region"
+          },
+          {
+            "name": "sequence",
+            "usage": "The Kinesis sequence number",
+            "default": "49545115243490985018280067714973144582180062593244200961"
+          },
+          {
+            "name": "data",
+            "usage": "he Kinesis message payload. There is no need to base64 this - sam will do this for you",
+            "default": "Hello, this is a test 123."
+          }
+        ]
+      },
+      {
+        "filename": "KinesisFirehose",
+        "id": "firehose",
+        "description": "Kinesis Firehose",
+        "tags": []
+      },
+      {
+        "filename": "KinesisFirehoseApacheLog",
+        "id": "firehose-apache-log",
+        "description": "Kinesis Firehose Apache Log",
+        "tags": []
+      },
+      {
+        "filename": "KinesisFirehoseStreamAsSource",
+        "id": "firehose-stream-as-source",
+        "description": "Kinesis Firehose Stream As Source",
+        "tags": []
+      },
+      {
+        "filename": "KinesisFirehoseSyslog",
+        "id": "firehose-syslog",
+        "description": "Kinesis Firehose Syslog",
+        "tags": []
+      }
+    ],
+    "rekognition": [
+      {
+        "filename": "RekognitionS3Request",
+        "id": "s3-request",
+        "description": "Rekognition S3 Request",
+        "tags": []
+      }
+    ],
+    "s3": [
+      {
+        "filename": "S3Delete",
+        "id": "delete",
+        "description": "S3 Delete",
+        "tags": [
+          {
+            "name": "region"
+          },
+          {
+            "name": "bucket",
+            "usage": "The S3 bucket the event should reference",
+            "default": "example-bucket"
+          },
+          {
+            "name": "key",
+            "usage": "The S3 key the event should reference",
+            "default": "test/key"
+          }
+        ]
+      },
+      {
+        "filename": "S3Put",
+        "id": "put",
+        "description": "S3 Put",
+        "tags": [
+          {
+            "name": "region"
+          },
+          {
+            "name": "bucket",
+            "usage": "The S3 bucket the event should reference",
+            "default": "example-bucket"
+          },
+          {
+            "name": "key",
+            "usage": "The S3 key the event should reference",
+            "default": "test/key"
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "filename": "ScheduledEvent",
+        "id": "scheduled-event",
+        "description": "CloudWatch Scheduled Event",
+        "tags": [
+          {
+            "name": "region"
+          }
+        ]
+      }
+    ],
+    "ses": [
+      {
+        "filename": "SesEmailReceiving",
+        "id": "email-receiving",
+        "description": "SES Email Receiving",
+        "tags": []
+      }
+    ],
+    "sns": [
+      {
+        "filename": "Sns",
+        "id": "sns",
+        "description": "SNS",
+        "tags": [
+          {
+            "name": "message",
+            "usage": "The SNS message body",
+            "default": "example message"
+          },
+          {
+            "name": "topic",
+            "usage": "The SNS topic",
+            "default": "arn:aws:sns:us-east-1:111122223333:ExampleTopic"
+          },
+          {
+            "name": "subject",
+            "usage": "The SNS subject",
+            "default": "example subject"
+          }
+        ]
+      }
+    ],
+    "stepfunctions": [
+      {
+        "filename": "StepFunctionsError",
+        "id": "error",
+        "description": "Step Function Error",
+        "tags": []
+      }
+    ],
+    "lex": [
+      {
+        "filename": "Lex-MakeAppointment",
+        "id": "make-appointment",
+        "description": "Lex - Make Appointment",
+        "tags": []
+      },
+      {
+        "filename": "Lex-OrderFlower",
+        "id": "order-flower",
+        "description": "Lex - Order Flower",
+        "tags": []
+      },
+      {
+        "filename": "LexBookTrip-BookCar",
+        "id": "book-car",
+        "description": "Lex Book Trip - Book Car",
+        "tags": []
+      },
+      {
+        "filename": "LexBookTrip-BookHotel",
+        "id": "book-hotel",
+        "description": "Lex Book Trip - Book Hotel",
+        "tags": []
+      }
+    ]
+  }
+}
