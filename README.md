@@ -36,7 +36,7 @@ This repository is a work in progress. Here is a prioritized list of things we a
 ### v0.1.0 Milestone:
 Once the repository reachces good maturity and a stable community of contributors, we hope to integrate this with local development tools like [AWS SAM Local CLI](https://github.com/awslabs/aws-sam-local).
 
-- [ ] Standardize mustache tags across all event JSON files. 
+Follow https://github.com/sanathkr/lambda-sample-events/milestone/1 
 
 ### v0.2.0 Milestone
 - [ ] Build libraries to render mustache and generate JSON for an event:
