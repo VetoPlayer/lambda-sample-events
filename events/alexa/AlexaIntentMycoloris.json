@@ -1,15 +1,15 @@
 {
   "version": "1.0",
   "session": {
-    "new": true,
+    "new": false,
     "sessionId": "amzn1.echo-api.session.[unique-value-here]",
     "application": {
       "applicationId": "amzn1.ask.skill.[unique-value-here]"
     },
+    "attributes": {},
     "user": {
       "userId": "amzn1.ask.account.[unique-value-here]"
-    },
-    "attributes": {}
+    }
   },
   "context": {
     "AudioPlayer": {
@@ -30,9 +30,18 @@
     }
   },
   "request": {
-    "type": "LaunchRequest",
+    "type": "IntentRequest",
     "requestId": "amzn1.echo-api.request.[unique-value-here]",
-    "timestamp": "2016-10-27T18:21:44Z",
-    "locale": "en-US"
+    "timestamp": "2016-10-27T21:06:28Z",
+    "locale": "en-US",
+    "intent": {
+      "name": "MyColorIsIntent",
+      "slots": {
+        "Color": {
+          "name": "Color",
+          "value": "blue"
+        }
+      }
+    }
   }
 }

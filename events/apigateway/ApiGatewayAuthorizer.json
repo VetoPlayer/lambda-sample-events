@@ -1,5 +1,5 @@
 {
+  "type": "TOKEN",
   "authorizationToken": "incoming-client-token",
-  "methodArn": "arn:aws:execute-api:[region]:[account_id]:[restApiId]/[stage]/[method]/[resourcePath]",
-  "type": "TOKEN"
+  "methodArn": "arn:aws:execute-api:{{.region}}:{{.accountId}}:[restApiId]/[stage]/[method]/[resourcePath]"
 }

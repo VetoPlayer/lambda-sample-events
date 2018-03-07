@@ -1,7 +1,13 @@
 {
   "tags": {
+    "accountId": {
+      "type": "string",
+      "description": "The AWS account ID of the event source.",
+      "default": "123456789012"
+    },
     "region": {
-      "usage": "The AWS Region the event should come from",
+      "type": "string",
+      "description": "The AWS region the event should come from.",
       "default": "us-east-1"
     }
   }

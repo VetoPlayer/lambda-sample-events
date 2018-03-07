@@ -1,19 +1,19 @@
 {
   "Records": [
     {
-      "eventID": "shardId-000000000000:{{.sequence}}",
-      "eventVersion": "1.0",
       "kinesis": {
-        "approximateArrivalTimestamp": 1428537600,
-        "partitionKey": "{{.partition}}",
-        "data": "{{.Data}}",
+        "partitionKey": "partitionKey-3",
         "kinesisSchemaVersion": "1.0",
-        "sequenceNumber": "{{.sequence}}"
+        "data": "SGVsbG8sIHRoaXMgaXMgYSB0ZXN0IDEyMy4=",
+        "sequenceNumber": "{{.sequenceNumber}}",
+        "approximateArrivalTimestamp": 1428537600.0
       },
+      "eventSource": "aws:kinesis",
+      "eventID": "shardId-000000000000:{{.sequenceNumber}}",
       "invokeIdentityArn": "arn:aws:iam::EXAMPLE",
+      "eventVersion": "1.0",
       "eventName": "aws:kinesis:record",
       "eventSourceARN": "arn:aws:kinesis:EXAMPLE",
-      "eventSource": "aws:kinesis",
       "awsRegion": "{{.region}}"
     }
   ]
