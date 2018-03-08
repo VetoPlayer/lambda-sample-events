@@ -227,6 +227,11 @@
             "type": "string",
             "description": "Name of the CodeCommit repository trigger.",
             "default": "my-trigger"
+          },
+          "customData": {
+            "type": "string",
+            "description": "Custom data sent along with the event.",
+            "default": "this is custom data"
           }
         }
       }

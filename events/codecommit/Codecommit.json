@@ -10,6 +10,7 @@
           }
         ]
       },
+      "customData": "{{.customData}}",
       "eventId": "5a824061-17ca-46a9-bbf9-114edeadbeef",
       "eventName": "TriggerEventTest",
       "eventPartNumber": 1,
