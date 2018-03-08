@@ -80,6 +80,11 @@
             "description": "HTTP body of the proxied request.",
             "default": "{\"test\":\"body\"}"
           },
+          "stage": {
+            "type": "string",
+            "description": "Stage name of the deployed API Gateway API.",
+            "default": "prod"
+          },
           "method": {
             "type": "string",
             "description": "HTTP method of the proxied request.",
